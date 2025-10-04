@@ -6,9 +6,11 @@ const gameController = require('../controllers/gameController')
 
 router.get('/', gameController.test);
 
-//router.get('/addPlayer', gameController.addPlayer);
+router.post('/addPlayer', gameController.addPlayer);
 
-router.get('/test', gameController.test);
+router.post('/getPlayers', gameController.getPlayers);
+
+router.post('/test', gameController.test);
 
 router.get('/createRoom', gameController.createRoom);
 

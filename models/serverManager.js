@@ -21,6 +21,10 @@ class Manager{
             console.log(`Room ${roomCode} not found`);
         }
     }
+
+    getPlayers(roomCode) {
+        return this.games.get(roomCode).getplayers();
+    }
     getGame(roomCode) {
         return this.games.get(roomCode);
     }

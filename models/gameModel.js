@@ -12,6 +12,10 @@ class Game{
         this.roomNumber = this.generateRoomCode();
         console.log("game created with room code: " + this.roomNumber);
     }
+    getPlayers(){
+        return this.players;
+    }
+
     generateRoomCode(){
         return 1;
     }
